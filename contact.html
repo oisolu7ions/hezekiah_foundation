@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Contact The Hezekiah Foundation. Questions, comments, or partnership inquiries.">
+  <title>Contact Us | The Hezekiah Foundation</title>
+  <link rel="icon" href="icon.jpg" type="image/jpeg">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,500;0,600;0,700;1,500&family=Source+Sans+3:ital,wght@0,400;0,500;0,600;0,700;1,400&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header class="site-header" id="site-header">
+    <div class="container">
+      <a href="index.html" class="logo">
+        <img src="icon.jpg" alt="" class="logo-img" width="40" height="40">
+        <span class="logo-text">The Hezekiah Foundation</span>
+      </a>
+      <button class="nav-toggle" aria-expanded="false" aria-controls="nav-menu" aria-label="Toggle menu">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+      <nav class="nav-menu" id="nav-menu">
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="projects.html">Projects</a></li>
+          <li><a href="contact.html">Contact</a></li>
+          <li><a href="https://donate.stripe.com/test_6oU6oHeWib6V2xtgUr2go00" class="btn btn-donate-nav" id="donate-link" target="_blank" rel="noopener noreferrer">Donate</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section class="contact-hero">
+      <div class="container">
+        <h1>Get in Touch</h1>
+        <p>We’d love to hear from you. Whether you’d like to volunteer, partner with us, or learn more about our mission, send us a message using the form below or email us directly.</p>
+      </div>
+    </section>
+
+    <section class="contact-section">
+      <div class="container">
+        <div class="contact-grid">
+          <div class="contact-image">
+            <img src="contact-us.jpg" alt="Contact The Hezekiah Foundation">
+          </div>
+          <div class="contact-content">
+            <div class="contact-info">
+              <h3>Get in Touch</h3>
+              <p>We’d love to hear from you. Whether you’d like to volunteer, partner with us, or learn more about our mission, send us a message using the form below or email us directly.</p>
+              <p>
+                <strong>Email:</strong><br>
+                <a href="mailto:thehezekiahfoundation@gmail.com">thehezekiahfoundation@gmail.com</a>
+              </p>
+            </div>
+
+            <form class="contact-form" id="contact-form" novalidate>
+            <div class="form-group">
+              <label for="first-name">First Name</label>
+              <input type="text" id="first-name" name="firstName" required autocomplete="given-name">
+              <span class="error" id="first-name-error" role="alert"></span>
+            </div>
+            <div class="form-group">
+              <label for="last-name">Last Name</label>
+              <input type="text" id="last-name" name="lastName" required autocomplete="family-name">
+              <span class="error" id="last-name-error" role="alert"></span>
+            </div>
+            <div class="form-group">
+              <label for="email">Email</label>
+              <input type="email" id="email" name="email" required autocomplete="email">
+              <span class="error" id="email-error" role="alert"></span>
+            </div>
+            <div class="form-group">
+              <label for="message">Message</label>
+              <textarea id="message" name="message" required></textarea>
+              <span class="error" id="message-error" role="alert"></span>
+            </div>
+            <button type="submit" class="btn btn-primary">Send</button>
+            <p class="success-message" id="form-success">Thank you for your message. We will get back to you as soon as we can.</p>
+          </form>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <div>
+        <span class="logo">The Hezekiah Foundation</span>
+      </div>
+      <nav aria-label="Footer">
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="projects.html">Projects</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </nav>
+      <div>
+        <a href="mailto:thehezekiahfoundation@gmail.com" class="email">thehezekiahfoundation@gmail.com</a>
+      </div>
+      <p class="copyright">© The Hezekiah Foundation. All rights reserved.</p>
+    </div>
+  </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
+  <script src="main.js"></script>
+</body>
+</html>
