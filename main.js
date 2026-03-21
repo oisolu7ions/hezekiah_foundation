@@ -83,14 +83,23 @@
       if (p && typeof p.then === 'function') {
         p.catch(function (err) {
           console.warn('Video autoplay prevented:', err);
+          var wrapper = video.closest('.project-video-wrapper');
+          if (wrapper && !wrapper.querySelector('.video-play-overlay')) {
+            var overlay = document.createElement('button');
+            overlay.className = 'video-play-overlay';
+            overlay.innerHTML = '<span>▶</span>';
+            overlay.setAttribute('aria-label', 'Play video');
+            overlay.addEventListener('click', function () {
+              video.play();
+              overlay.remove();
+            });
+            wrapper.appendChild(overlay);
+          }
         });
       }
     }
 
     projectVideos.forEach(function (video) {
-      video.addEventListener('click', function () {
-        if (video.paused) video.play().catch(function () {});
-      });
       // Start playing as soon as the page is ready (videos are on projects page)
       video.load();
       tryPlayVideo(video);

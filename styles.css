@@ -662,7 +662,35 @@ p:last-child {
   height: 100%;
   object-fit: cover;
   display: block;
+}
+
+.video-play-overlay {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  background: rgba(255, 255, 255, 0.9);
+  border: none;
   cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 2rem;
+  color: var(--color-navy);
+  transition: transform var(--transition), background var(--transition);
+  z-index: 10;
+}
+
+.video-play-overlay:hover {
+  transform: translate(-50%, -50%) scale(1.1);
+  background: rgba(255, 255, 255, 1);
+}
+
+.video-play-overlay span {
+  margin-left: 4px;
 }
 
 .video-error-message {
