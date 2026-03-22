@@ -123,7 +123,7 @@
           if (video.error && video.error.code === 4) {
             errorText = 'Video file not found or cannot be loaded.';
           }
-          errorMsg.innerHTML = '<p><strong>' + errorText + '</strong></p><p style="font-size: 0.875rem; margin-top: 0.5rem;">.MOV files work best in Safari. For Chrome/Firefox, please convert videos to MP4 format.</p>';
+          errorMsg.innerHTML = '<p><strong>' + errorText + '</strong></p><p style="font-size: 0.875rem; margin-top: 0.5rem;">If the problem continues, try refreshing the page or using a different browser.</p>';
           wrapper.appendChild(errorMsg);
         }
       });

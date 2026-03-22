@@ -95,7 +95,9 @@ hezekiah_foundation/
 │   ├── background.jpeg
 │   ├── body-background-img.jpeg
 │   └── tough.png
-├── wintercareproject.mov   # Project video
-├── flint-video.mov        # Project video
+├── meals_project.mp4        # Project video (MP4)
+├── wintercareproject.mp4
+├── water_project.mp4
+├── flint-video.mov          # Optional; not used on site; large — may be gitignored
 └── HOW-TO-RUN.md          # This file
 ```
